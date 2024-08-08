@@ -44,9 +44,12 @@ class _CurrencyConverterState extends State<CurrencyConverter> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              result.toString(),
-              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                result.toString(),
+                style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+              ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
